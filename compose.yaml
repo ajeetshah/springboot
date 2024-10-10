@@ -1,17 +1,21 @@
 name: learn-spring-boot
 services:
-  rabbitmq:
-    container_name: 'rabbitmq'
-    labels:
-      org.springframework.boot.ignore: true
-    image: 'rabbitmq:latest'
-    environment:
-      - 'RABBITMQ_DEFAULT_PASS=password'
-      - 'RABBITMQ_DEFAULT_USER=username'
-    ports:
-      - '5672'
-  redis:
-    container_name: 'redis'
-    image: 'redis:latest'
-    ports:
-      - '6379'
+    rabbitmq:
+        container_name: 'rabbitmq'
+        labels:
+            org.springframework.boot.ignore: true
+        image: 'rabbitmq:latest'
+        ports:
+            - '5672:5672'
+    redis:
+        container_name: 'redis'
+        image: 'redis:latest'
+        ports:
+            - '6379:6379'
+        volumes:
+            - ./redis_data:/bitnami/redis/data
+        command: redis-server --requirepass ${REDIS_PASSWORD}
+
+volumes:
+    postgres_data:
+    redis_data:
