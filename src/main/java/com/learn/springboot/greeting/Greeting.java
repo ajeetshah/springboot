@@ -1,3 +1,3 @@
-package com.learn.springboot.Greeting;
+package com.learn.springboot.greeting;
 
 public record Greeting(long id, String content) { }
