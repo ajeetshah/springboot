@@ -1,12 +1,17 @@
+name: learn-spring-boot
 services:
   rabbitmq:
+    container_name: 'rabbitmq'
+    labels:
+      org.springframework.boot.ignore: true
     image: 'rabbitmq:latest'
     environment:
-      - 'RABBITMQ_DEFAULT_PASS=secret'
-      - 'RABBITMQ_DEFAULT_USER=myuser'
+      - 'RABBITMQ_DEFAULT_PASS=password'
+      - 'RABBITMQ_DEFAULT_USER=username'
     ports:
       - '5672'
   redis:
+    container_name: 'redis'
     image: 'redis:latest'
     ports:
       - '6379'
