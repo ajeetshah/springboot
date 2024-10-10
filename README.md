@@ -2,6 +2,8 @@
 
 ## Todo
 
+- Redis: cache
+- Redis: message broker
 - Connect with RabbitMQ
 - Connect with postgres
 - Logging in files: logback
@@ -18,3 +20,4 @@
 - On the auto format on save
 - Rest API doc
 - Connect with Redis
+- Redis: read and write
