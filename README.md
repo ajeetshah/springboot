@@ -10,6 +10,10 @@
 - OOPs and Design Patterns
 - Exception Handling
 - Read property values in code
+- MapStruct
+- Lombok
+- jUnit, mockito
+- swaggerui
 
 ## Done
 

@@ -1,4 +1,5 @@
 name: learn-spring-boot
+
 services:
     rabbitmq:
         container_name: 'rabbitmq'
