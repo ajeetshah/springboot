@@ -2,6 +2,7 @@
 
 ## Todo
 
+- Threads
 - Redis: cache
 - Redis: message broker
 - Connect with RabbitMQ
