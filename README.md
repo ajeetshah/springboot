@@ -2,7 +2,6 @@
 
 ## Todo
 
-- Threads
 - Redis: cache
 - Redis: message broker
 - Connect with RabbitMQ
@@ -26,3 +25,4 @@
 - Rest API doc
 - Connect with Redis
 - Redis: read and write
+- Threads
